@@ -5,23 +5,15 @@ title: Index page
 
 {% block content %}
 	
-	{# variable example #}
-	<h1>{{title}}</h1>
+	<h1>blabla</h1>
 
-	
-	{# partial example #}
-	{% include "partials/_header.html" %}
-
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
+	<canvas width="1600" height="1200" style="width: 800px;height: 600px" id="canvasik"></canvas>
+	<!-- begin canvas  -->
+	<div class="canvas">
+		{% for i in range(1, 103) %}
+		  <div class="p{{i}}"></div>
 		{% endfor %}
-	{# end of example #}
+	</div>
+	<!-- end canvas -->
 
 {% endblock %}

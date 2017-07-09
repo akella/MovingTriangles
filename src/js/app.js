@@ -1,3 +1,5 @@
-import sayHello from './lib/sayHello.js';
+import canvas from './canvas';
 
-sayHello();
+$('body').on('click',()=>{
+	$('body').toggleClass('is-css');
+})
